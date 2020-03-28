@@ -1,8 +1,16 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="calendar-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="ellipsis-vertical" md="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Events</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,4 +22,8 @@
   </ion-header>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-button (click)="onClick()">
+    Click me
+  </ion-button>
+  <h2>Welcome from capacitor</h2>
 </ion-content>

@@ -1,5 +1,8 @@
 {
   "name": "FridayCricketPayment",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }
